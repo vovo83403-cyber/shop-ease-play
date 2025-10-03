@@ -52,13 +52,24 @@ const ProductDetails: React.FC = () => {
             <CardContent className="p-0">
               {/* Desktop Layout: Image Left, Details Right */}
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                {/* Product Image */}
+                {/* Product Image or Live Preview */}
                 <div className="relative">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-80 md:h-full md:min-h-[500px] object-cover"
-                  />
+                  {product.liveUrl ? (
+                    <div className="w-full h-80 md:h-full md:min-h-[500px]">
+                      <iframe
+                        src={product.liveUrl}
+                        title={`Live preview of ${product.name}`}
+                        className="w-full h-full border-0"
+                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                      />
+                    </div>
+                  ) : (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-80 md:h-full md:min-h-[500px] object-cover"
+                    />
+                  )}
                   <Button
                     variant="ghost"
                     size="sm"

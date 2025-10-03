@@ -2312,4 +2312,142 @@ export const products: Product[] = [
   image: 'https://images.unsplash.com/photo-1584839404047-5f65d5c45ad1?w=400&h=400&fit=crop',
   description: 'Comfortable nursing pillow for mothers'
 },
+
+// Website Source Code (15 products)
+{
+  id: 'wsc1',
+  name: 'Md Ridoan Mahmud Zisan',
+  price: 15000,
+  category: 'Website Source Code',
+  image: 'https://ridoan-zisan.netlify.app/profile.jpg',
+  description: 'Professional portfolio website showcasing skills and projects with modern design',
+  liveUrl: 'https://ridoan-zisan.netlify.app'
+},
+{
+  id: 'wsc2',
+  name: 'DhunatHub',
+  price: 25000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/KvXCcTcg/dhunathub.png',
+  description: 'Local help directory webapp connecting services and people in your area',
+  liveUrl: 'https://dhunat.netlify.app'
+},
+{
+  id: 'wsc3',
+  name: 'Netlistore',
+  price: 35000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/tgmmKZmJ/netlistore.png',
+  description: 'Modern e-commerce webapp with cart, wishlist, and checkout features',
+  liveUrl: 'https://netlistore.vercel.app'
+},
+{
+  id: 'wsc4',
+  name: 'ZupraMart',
+  price: 35000,
+  category: 'Website Source Code',
+  image: 'https://zupramart.netlify.app/ZupraMart.jpg',
+  description: 'Full-featured e-commerce platform with advanced product filtering',
+  liveUrl: 'https://zupramart.netlify.app'
+},
+{
+  id: 'wsc5',
+  name: 'BOBDO',
+  price: 28000,
+  category: 'Website Source Code',
+  image: 'https://bobdo.vercel.app/images/bobdo-icon.png',
+  description: 'Blood donation organization webapp connecting donors with recipients',
+  liveUrl: 'https://bobdo.vercel.app'
+},
+{
+  id: 'wsc6',
+  name: 'HSCian',
+  price: 30000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/BQP7QDjk/HSCian-20250725-225238-0000.png',
+  description: 'E-learning webapp for HSC students with courses and study materials',
+  liveUrl: 'https://hscian.netlify.app'
+},
+{
+  id: 'wsc7',
+  name: 'Zpad',
+  price: 12000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/vBkkVgWk/zpad.png',
+  description: 'Online notepad webapp with save and edit functionality',
+  liveUrl: 'https://zpad.netlify.app'
+},
+{
+  id: 'wsc8',
+  name: 'YouthHopeBD',
+  price: 20000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/rskLpzPD/IMG-20250916-021919.jpg',
+  description: 'Youth organization website promoting community development',
+  liveUrl: 'https://youthhope-bd.netlify.app'
+},
+{
+  id: 'wsc9',
+  name: 'UniConverter',
+  price: 18000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/qqKYXJwR/uniconverter.png',
+  description: 'Universal converter webapp for units, currency, and measurements',
+  liveUrl: 'https://uniconverter.netlify.app'
+},
+{
+  id: 'wsc10',
+  name: 'SnakeGame',
+  price: 8000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/Jhh2YcxS/snakegame.png',
+  description: 'Classic snake game with modern UI and smooth gameplay',
+  liveUrl: 'https://snake-i.netlify.app'
+},
+{
+  id: 'wsc11',
+  name: 'XOX',
+  price: 7000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/g2m58PZz/tiktaktoe.png',
+  description: 'Tic Tac Toe game with AI opponent and scoring system',
+  liveUrl: 'https://xox-i.netlify.app'
+},
+{
+  id: 'wsc12',
+  name: 'TypingTest',
+  price: 10000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/fRCPvgcx/typingtest.png',
+  description: 'Typing speed test webapp with real-time WPM tracking',
+  liveUrl: 'https://typing-i.netlify.app'
+},
+{
+  id: 'wsc13',
+  name: 'ToolHub',
+  price: 22000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/vZyRhVpd/toolhub.png',
+  description: 'Collection of useful web tools and utilities in one place',
+  liveUrl: 'https://toolhub-i.netlify.app'
+},
+{
+  id: 'wsc14',
+  name: 'ThetaCode',
+  price: 25000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/kMRkdsCm/thetacode.png',
+  description: 'Online code editor and compiler for multiple programming languages',
+  liveUrl: 'https://thetacode.netlify.app'
+},
+{
+  id: 'wsc15',
+  name: 'SoundMemory',
+  price: 9000,
+  category: 'Website Source Code',
+  image: 'https://i.postimg.cc/qvxP57T6/memorygame.png',
+  description: 'Sound memory game testing audio recognition and memory skills',
+  liveUrl: 'https://mindgame-i.netlify.app'
+},
 ];
+
