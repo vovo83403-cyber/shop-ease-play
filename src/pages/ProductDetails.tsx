@@ -94,26 +94,17 @@ const ProductDetails: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Live Demo Button */}
-                  {product.liveUrl && (
-                    <div className="bg-accent/30 p-4 rounded-lg border-2 border-accent">
-                      <p className="text-sm font-medium text-muted-foreground mb-3 flex items-center gap-2">
-                        <ExternalLink className="h-4 w-4" />
-                        লাইভ ডেমো দেখার জন্য প্রস্তুত
-                      </p>
-                      <Button
-                        onClick={() => window.open(product.liveUrl, '_blank')}
-                        className="w-full bg-gradient-to-r from-primary to-primary-hover text-primary-foreground hover:opacity-90 shadow-lg"
-                        size="lg"
-                      >
-                        <ExternalLink className="h-5 w-5 mr-2" />
-                        <span className="font-semibold">লাইভ ডেমো দেখুন</span>
-                      </Button>
-                    </div>
-                  )}
-
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4">
+                    {product.liveUrl && (
+                      <Button
+                        onClick={() => window.open(product.liveUrl, '_blank')}
+                        className="flex-1 bg-primary hover:bg-primary-hover text-primary-foreground"
+                        size="lg"
+                      >
+                        Live Demo
+                      </Button>
+                    )}
                     <Button
                       onClick={handleBuyNow}
                       className="flex-1 bg-primary hover:bg-primary-hover text-primary-foreground"
