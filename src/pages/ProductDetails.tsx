@@ -7,7 +7,7 @@ import { products } from '@/data/products';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Heart, ShoppingCart } from 'lucide-react';
+import { Heart, ShoppingCart, ExternalLink } from 'lucide-react';
 
 const ProductDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -52,24 +52,13 @@ const ProductDetails: React.FC = () => {
             <CardContent className="p-0">
               {/* Desktop Layout: Image Left, Details Right */}
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                {/* Product Image or Live Preview */}
+                {/* Product Image */}
                 <div className="relative">
-                  {product.liveUrl ? (
-                    <div className="w-full h-80 md:h-full md:min-h-[500px]">
-                      <iframe
-                        src={product.liveUrl}
-                        title={`Live preview of ${product.name}`}
-                        className="w-full h-full border-0"
-                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-                      />
-                    </div>
-                  ) : (
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-80 md:h-full md:min-h-[500px] object-cover"
-                    />
-                  )}
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-80 md:h-full md:min-h-[500px] object-cover"
+                  />
                   <Button
                     variant="ghost"
                     size="sm"
@@ -104,6 +93,21 @@ const ProductDetails: React.FC = () => {
                       {product.description}
                     </p>
                   </div>
+
+                  {/* Live Demo Button */}
+                  {product.liveUrl && (
+                    <div>
+                      <Button
+                        onClick={() => window.open(product.liveUrl, '_blank')}
+                        variant="secondary"
+                        className="w-full"
+                        size="lg"
+                      >
+                        <ExternalLink className="h-5 w-5 mr-2" />
+                        লাইভ ডেমো দেখুন
+                      </Button>
+                    </div>
+                  )}
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4">
